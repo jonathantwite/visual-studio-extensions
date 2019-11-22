@@ -1,0 +1,7 @@
+CodeSnap (adpyk)
+CSS Peek (Pranay Prakash)
+GitLens - Git supercharged (Eric Amodio)
+Import Cost (Wix)
+Jest Snippets (andys8)
+Live Server (Ritwick Dey)
+Vetur (Pine Wu)
