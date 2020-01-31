@@ -1,7 +1,14 @@
-CodeSnap (adpyk)
+AsciiDoc (João Pinto)
+Code Spell Checker (Street Side Software)
 CSS Peek (Pranay Prakash)
 GitLens - Git supercharged (Eric Amodio)
-Import Cost (Wix)
 Jest Snippets (andys8)
 Live Server (Ritwick Dey)
+Markdown Preview Enhanced (Yiyi Wang)
+markdownlint (David Anson)
 Vetur (Pine Wu)
+Visual Studio Keymap (Microsoft)
+
+Disabled:
+CodeSnap (adpyk)
+Import Cost (Wix)
