@@ -7,6 +7,8 @@
     "markdown.preview.fontFamily": "'Cascadia Code', -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', 'Ubuntu', 'Droid Sans', sans-serif",
     "git.autofetch": true,
     "cSpell.userWords": [
-        "Twite"
+        "Twite",
+        "anonymise",
+        "anonymised"
     ]
 }
