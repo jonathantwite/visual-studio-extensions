@@ -10,5 +10,7 @@
         "Twite",
         "anonymise",
         "anonymised"
-    ]
+    ],
+    "editor.detectIndentation": false,
+    "editor.tabCompletion": "onlySnippets"
 }

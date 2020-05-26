@@ -1,0 +1,17 @@
+{
+    "Issue File Layout": {
+        "body": [
+            "# $1: $2",
+            "",
+            "|Date started|Branch|",
+            "|---|---|",
+            "|2020-$3-$4|`$1-$5`|",
+            "",
+            "## Notes",
+            "",
+            "$0"
+        ],
+        "description": "Create the layout for an issue file.",
+        "prefix": "mdissue"
+    }
+}
