@@ -8,8 +8,8 @@
     "git.autofetch": true,
     "cSpell.userWords": [
         "Twite",
-		"anonymise",
-		"anonymised"
+        "anonymise",
+        "anonymised"
     ],
     "editor.detectIndentation": false,
     "editor.tabCompletion": "onlySnippets"
