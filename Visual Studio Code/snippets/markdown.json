@@ -1,17 +1,17 @@
 {
     "Issue File Layout": {
         "body": [
-            "# $1: $2",
+            "# ${TM_FILENAME/(.*)\\..+$/$1/}: ${1:title}",
             "",
             "|Date started|Branch|",
             "|---|---|",
-            "|2020-$3-$4|`$5\\$1-$6`|",
+            "|2020-$CURRENT_MONTH-$CURRENT_DATE|`${2|bugfix,feature,hotfix|}/${TM_FILENAME/(.*)\\..+$/$1/}-${1/(([^\\s]*)(\\s))/${2:/downcase}-/g}`|",
             "",
             "## Notes",
             "",
             "$0"
         ],
         "description": "Create the layout for an issue file.",
-        "prefix": "mdissue"
+        "prefix": "dcissue"
     }
 }
