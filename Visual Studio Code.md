@@ -12,6 +12,7 @@
 * Markdown PDF (yzane)
 * Markdown Preview Enhanced (Yiyi Wang)
 * markdownlint (David Anson)
+* Non-breaking space highlighter (Viktor Zetterström)
 * Vetur (Pine Wu)
 * Visual Studio Keymap (Microsoft)
 * vscode-pdf (tomoki1207)
@@ -21,9 +22,9 @@
 
 * AsciiDoc (asciidoctor)
 * asciidoctor-vscode (João Pinto)
-* GitLens - Git supercharged (Eric Amodio)
 
 ## Used previously
 
 * CodeSnap (adpyk)
 * Import Cost (Wix)
+* GitLens - Git supercharged (Eric Amodio)
