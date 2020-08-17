@@ -13,5 +13,8 @@
     ],
     "editor.detectIndentation": false,
     "editor.tabCompletion": "onlySnippets",
-    "window.zoomLevel": 0
+    "window.zoomLevel": 0,
+    "bracket-pair-colorizer-2.excludedLanguages": [
+        "markdown"
+    ]
 }
