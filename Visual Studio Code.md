@@ -2,7 +2,10 @@
 
 ## Enabled
 
-* Bracket Pair Colorizer (CoenraadS)
+* Auto Close Tag (Jun Han)
+* Auto Complete Tag (Jun Han)
+* Auto Rename Tag (Jun Han)
+* Bracket Pair Colorizer 2 (CoenraadS)
 * Code Spell Checker (Street Side Software)
 * CSS Peek (Pranay Prakash)
 * Deno (denoland)
