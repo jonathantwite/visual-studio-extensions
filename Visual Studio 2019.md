@@ -9,3 +9,4 @@
 * Open Command Line (Mads Kristensen)
 * Bundler & Minifier (Mads Kristensen)
 * Web Compiler (Mads Kristensen)
+* Visual Studio Spell Checker (VS2017 and Later)

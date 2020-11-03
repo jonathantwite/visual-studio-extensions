@@ -9,6 +9,7 @@
 * Code Spell Checker (Street Side Software)
 * CSS Peek (Pranay Prakash)
 * Deno (denoland)
+* ESLint (Dirk Baeumer)
 * gitignore (michelemelluso)
 * Jest Snippets (andys8)
 * Live Server (Ritwick Dey)
@@ -16,10 +17,13 @@
 * Markdown Preview Enhanced (Yiyi Wang)
 * markdownlint (David Anson)
 * Non-breaking space highlighter (Viktor Zetterström)
+* PowerShell (Microsoft)
+* Regex Snippets (Monish Basaniwal)
+* Regex Text Generator (rioj7)
 * Vetur (Pine Wu)
 * Visual Studio Keymap (Microsoft)
 * vscode-pdf (tomoki1207)
-* Work Count (Microsoft)
+* Word Count (Microsoft)
 
 ## Disabled
 
