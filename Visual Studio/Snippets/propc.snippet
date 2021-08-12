@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+    <CodeSnippet Format="1.0.0">
+        <Header>
+            <Title>INotifyPropertyChanged Property</Title>
+            <Author>Twite, Jonathan</Author>
+            <Description>Code snippet for a property on a class implementing INotifyPropertyChanged</Description>
+            <Shortcut>propc</Shortcut>
+        </Header>
+        <Snippet>
+            <Declarations>
+                <Literal>
+                    <ID>Type</ID>
+                    <Default>int</Default>
+                </Literal>
+                <Literal>
+                    <ID>BackingField</ID>
+                    <ToolTip>Name of the backing field.</ToolTip>
+                    <Default>_backing</Default>
+                </Literal>
+                <Literal>
+                    <ID>PropertyName</ID>
+                    <ToolTip>The property's name.</ToolTip>
+                    <Default>Property</Default>
+                </Literal>
+            </Declarations>
+            <Code Language="CSharp">
+                <![CDATA[private $Type$ $BackingField$;
+        public $Type$ $PropertyName$
+        {
+            get => $BackingField$;
+            set
+            {
+                $BackingField$ = value;
+                OnPropertyChanged();
+            }
+        }]]>
+            </Code>
+        </Snippet>
+    </CodeSnippet>
+</CodeSnippets>
