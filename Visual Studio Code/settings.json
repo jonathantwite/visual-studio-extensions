@@ -8,13 +8,33 @@
     "git.autofetch": true,
     "cSpell.userWords": [
         "Twite",
-		"anonymise",
-		"anonymised"
+        "Xamarin",
+        "anonymise",
+        "anonymised",
+        "jayna",
+        "nonclustered"
     ],
     "editor.detectIndentation": false,
     "editor.tabCompletion": "onlySnippets",
     "window.zoomLevel": 0,
     "bracket-pair-colorizer-2.excludedLanguages": [
         "markdown"
+    ],
+    "debug.javascript.codelens.npmScripts": "never",
+    "vetur.format.options.tabSize": 4,
+    "extensions.ignoreRecommendations": false,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "netlify.api_token": "wXCu453XPIF01ovU3eiyJ8zqxuEp6b0eAs22focR_sY",
+    "netlify.site_id": "",
+    "gitlens.gitCommands.skipConfirmations": [
+        "fetch:command",
+        "stash-push:command",
+        "switch:command",
+        "branch-create:command"
+    ],
+    "dashboard.projectData": null,
+    "vulnCost.typescriptExtensions": [
+    
+        "\\.tsx?$"
     ]
 }
