@@ -16,10 +16,6 @@
     ],
     "editor.detectIndentation": false,
     "editor.tabCompletion": "onlySnippets",
-    "window.zoomLevel": 0,
-    "bracket-pair-colorizer-2.excludedLanguages": [
-        "markdown"
-    ],
     "debug.javascript.codelens.npmScripts": "never",
     "vetur.format.options.tabSize": 4,
     "extensions.ignoreRecommendations": false,
@@ -33,8 +29,12 @@
         "branch-create:command"
     ],
     "dashboard.projectData": null,
-    "vulnCost.typescriptExtensions": [
-    
-        "\\.tsx?$"
-    ]
+    "javascript.format.semicolons": "insert",
+    "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis": true,
+    "javascript.preferences.importModuleSpecifier": "relative",
+    "javascript.preferences.quoteStyle": "single",
+    "editor.accessibilitySupport": "off",
+    "editor.guides.bracketPairs": true,
+    "editor.bracketPairColorization.enabled": true,
+    "powershell.developer.editorServicesLogLevel": "Diagnostic"
 }

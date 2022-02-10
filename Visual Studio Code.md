@@ -2,11 +2,11 @@
 
 ## Enabled
 
+* Angular Language Service (Angular)
 * Auto Close Tag (Jun Han)
 * Auto Complete Tag (Jun Han)
 * Auto Rename Tag (Jun Han)
 * Better Comments (Aaron Bond)
-* Bracket Pair Colorizer 2 (CoenraadS)
 * C# (Microsoft)
 * Code Spell Checker (Street Side Software)
 * CSS Peek (Pranay Prakash)
@@ -27,18 +27,20 @@
 * markdownlint (David Anson)
 * Netlify (shailen)
 * Non-breaking space highlighter (Viktor Zetterström)
-* PowerShell (Microsoft)
+* PowerShell (Microsoft) - 2021.10.2
 * Project Dashboard (KruemelKatze)
 * Rainbow CSV (mechatroner)
 * Regex Snippets (Monish Basaniwal)
 * Regex Text Generator (rioj7)
+* Remote - WSL (Microsoft)
+* rpm-hex-calc (thatnamegroup)
+* Snyk Vulnerability Checker (Snyk)
 * SQLite (alexcvzz)
 * stylelint (stylelint)
 * Todo Tree (Grintfuggly)
 * Vetur (Pine Wu)
 * Visual Studio Keymap (Microsoft)
 * vscode-pdf (tomoki1207)
-* Vuln Cost - Security Scanner (Snyk)
 * Word Count (Microsoft)
 
 ## Disabled
@@ -49,5 +51,7 @@
 
 ## Used previously
 
+* Bracket Pair Colorizer 2 (CoenraadS)
 * CodeSnap (adpyk)
 * Import Cost (Wix)
+* Vuln Cost - Security Scanner (Snyk)
