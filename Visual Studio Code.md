@@ -2,6 +2,7 @@
 
 ## Enabled
 
+* .NET Core Test Explorer (Jun Han)
 * Angular Language Service (Angular)
 * Auto Close Tag (Jun Han)
 * Auto Complete Tag (Jun Han)
@@ -16,8 +17,8 @@
 * Excel Viewer (GrapeCity)
 * Git Graph (mhutchie)
 * gitignore (michelemelluso)
-* GitLens - Git supercharged (Eric Amodio)
 * Gulp Tasks (Nick Dodd)
+* Hex Editor (Microsoft)
 * Highlight Matching Tag (vincaslt)
 * HTML End Tag Labels (Ante Primorac)
 * Jest Snippets (andys8)
@@ -27,12 +28,12 @@
 * markdownlint (David Anson)
 * Netlify (shailen)
 * Non-breaking space highlighter (Viktor Zetterström)
+* PlantUML (jebbs)
 * PowerShell (Microsoft) - 2021.10.2
 * Project Dashboard (KruemelKatze)
 * Rainbow CSV (mechatroner)
 * Regex Snippets (Monish Basaniwal)
 * Regex Text Generator (rioj7)
-* Remote - WSL (Microsoft)
 * rpm-hex-calc (thatnamegroup)
 * Snyk Vulnerability Checker (Snyk)
 * SQLite (alexcvzz)
@@ -41,12 +42,16 @@
 * Vetur (Pine Wu)
 * Visual Studio Keymap (Microsoft)
 * vscode-pdf (tomoki1207)
+* Vue (Rahul Kadyan)
 * Word Count (Microsoft)
+* WSL (Microsoft)
+* XML (Red Hat)
 
 ## Disabled
 
 * AsciiDoc (asciidoctor)
 * asciidoctor-vscode (João Pinto)
+* GitLens - Git supercharged (Eric Amodio)
 * VueDX (Rahul Kadyan)
 
 ## Used previously
@@ -54,4 +59,5 @@
 * Bracket Pair Colorizer 2 (CoenraadS)
 * CodeSnap (adpyk)
 * Import Cost (Wix)
+* Remote - WSL (Microsoft)
 * Vuln Cost - Security Scanner (Snyk)
