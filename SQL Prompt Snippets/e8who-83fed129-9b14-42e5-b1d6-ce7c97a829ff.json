@@ -1,0 +1,6 @@
+{
+  "id": "83fed129-9b14-42e5-b1d6-ce7c97a829ff",
+  "prefix": "e8who",
+  "description": "Return the database's authority",
+  "body": "SELECT E.OwnerName, E.ERONationID\nFROM dbo.ERO AS E"
+}

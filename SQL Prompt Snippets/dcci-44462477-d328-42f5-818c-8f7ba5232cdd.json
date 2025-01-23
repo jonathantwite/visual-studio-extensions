@@ -1,0 +1,16 @@
+{
+  "id": "44462477-d328-42f5-818c-8f7ba5232cdd",
+  "prefix": "dcci",
+  "description": "Create nonclustered index",
+  "body": "IF EXISTS (SELECT * FROM sys.indexes WHERE name='IX_$table$_$columns$' AND object_id=OBJECT_ID('dbo.$table$'))\n    DROP INDEX IX_$table$_$columns$ ON dbo.$table$\nGO\n\nCREATE NONCLUSTERED INDEX IX_$table$_$columns$\nON dbo.$table$($CURSOR$);\nGO",
+  "placeholders": [
+    {
+      "name": "table",
+      "defaultValue": ""
+    },
+    {
+      "name": "columns",
+      "defaultValue": ""
+    }
+  ]
+}

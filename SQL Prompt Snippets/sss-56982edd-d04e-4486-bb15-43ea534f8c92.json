@@ -1,0 +1,12 @@
+{
+  "id": "56982edd-d04e-4486-bb15-43ea534f8c92",
+  "prefix": "sss",
+  "description": "Select top n from",
+  "body": "SELECT TOP ($n$) *\nFROM ",
+  "placeholders": [
+    {
+      "name": "n",
+      "defaultValue": ""
+    }
+  ]
+}

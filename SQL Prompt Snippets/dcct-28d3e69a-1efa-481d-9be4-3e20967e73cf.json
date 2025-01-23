@@ -1,0 +1,12 @@
+{
+  "id": "28d3e69a-1efa-481d-9be4-3e20967e73cf",
+  "prefix": "dcct",
+  "description": "Create table",
+  "body": "IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'dbo.$name$') AND type IN (N'U'))\n    CREATE TABLE dbo.$name$($CURSOR$);\nGO",
+  "placeholders": [
+    {
+      "name": "name",
+      "defaultValue": ""
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "id": "381dd26e-90c0-4b9a-b14f-42aac6168962",
+  "prefix": "all",
+  "description": "Run command against all E8 databases",
+  "body": "USE master;\r\nEXEC dbo.sp_ineachdb\r\n    @command = N'SELECT DB_NAME();\r\n    $CURSOR$',\r\n    @user_only = 1,\r\n    @name_pattern = N'Elector8%',\r\n    @exclude_pattern = N'%PrivateInfo',\r\n    @exclude_list = N'Elector8Portal,Elector8Portal.Old';"
+}

@@ -1,0 +1,20 @@
+{
+  "id": "79674699-7173-402d-ab8c-bc0b0c56f81e",
+  "prefix": "dccf",
+  "description": "Create foreign key constraint",
+  "body": "IF EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'FK_$table$_$referenced_table$_$column$') AND parent_object_id = OBJECT_ID(N'$table$'))\n    ALTER TABLE dbo.$table$ DROP CONSTRAINT FK_$table$_$referenced_table$_$column$\nGO\n\nALTER TABLE dbo.$table$\nADD CONSTRAINT FK_$table$_$referenced_table$_$column$ FOREIGN KEY($column$)\nREFERENCES dbo.$referenced_table$ ($column$)\nON DELETE NO ACTION ON UPDATE NO ACTION",
+  "placeholders": [
+    {
+      "name": "table",
+      "defaultValue": ""
+    },
+    {
+      "name": "referenced_table",
+      "defaultValue": ""
+    },
+    {
+      "name": "column",
+      "defaultValue": ""
+    }
+  ]
+}

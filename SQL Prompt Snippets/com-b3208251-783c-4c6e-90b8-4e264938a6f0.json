@@ -1,0 +1,6 @@
+{
+  "id": "b3208251-783c-4c6e-90b8-4e264938a6f0",
+  "prefix": "com",
+  "description": "Get the compatibility level of the database",
+  "body": "SELECT compatibility_level FROM sys.databases WHERE name = '$DBNAME$';"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "0006ebbd-84b1-4ee4-9e02-2eb0496bba1e",
+  "prefix": "bak",
+  "description": "Backup the database",
+  "body": "BACKUP DATABASE $DBNAME$\r\nTO DISK = '$LOCATION$'\r\nWITH COMPRESSION;",
+  "placeholders": [
+    {
+      "name": "LOCATION",
+      "defaultValue": null
+    }
+  ]
+}

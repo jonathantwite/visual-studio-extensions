@@ -1,0 +1,6 @@
+{
+  "id": "e62e660d-62d0-4778-941b-5f75336c3ffe",
+  "prefix": "t0",
+  "description": "Timing, IO statistics on, include total time",
+  "body": "DECLARE @T0 DATETIME2 = GETDATE();\nSET STATISTICS TIME,IO ON;\n"
+}

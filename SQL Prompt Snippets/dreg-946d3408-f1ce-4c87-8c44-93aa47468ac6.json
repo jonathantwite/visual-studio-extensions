@@ -1,0 +1,6 @@
+{
+  "id": "946d3408-f1ce-4c87-8c44-93aa47468ac6",
+  "prefix": "dreg",
+  "description": "Default Register snippet",
+  "body": "(SELECT TOP(1) R.RegisterID FROM dbo.Register AS R WHERE R.IsDefault = 1)"
+}

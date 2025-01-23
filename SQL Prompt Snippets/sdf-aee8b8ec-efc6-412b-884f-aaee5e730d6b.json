@@ -1,0 +1,6 @@
+{
+  "id": "aee8b8ec-efc6-412b-884f-aaee5e730d6b",
+  "prefix": "sdf",
+  "description": "SELECT DISTINCT FROM",
+  "body": "SELECT DISTINCT *\nFROM "
+}

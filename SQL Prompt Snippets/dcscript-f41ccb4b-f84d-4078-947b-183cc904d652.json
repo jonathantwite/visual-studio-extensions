@@ -1,0 +1,24 @@
+{
+  "id": "f41ccb4b-f84d-4078-947b-183cc904d652",
+  "prefix": "dcscript",
+  "description": "Script file",
+  "body": "-- ===================================================\n-- Script:\t\tScript_E8_1579_FixTeviotAvenue\n-- Author:\t\t$author$\n-- Create date: $DATE(yyyy-MM-dd)$\n-- Issue:\t\t$issue_num$: $issue_desc$\n-- Description:\t$description$\n-- Remarks:\t\t\n-- ===================================================\n\n------------------------------------------------------\n-------------------- Script setup --------------------\n------------------------------------------------------\n\n-- User-adjustable setup\n$CURSOR$\n\n------------------------------------------------------\n------------------ Script setup end ------------------\n------------------------------------------------------\n\n-- Internal setup\n\n-- Database changes\nBEGIN TRANSACTION;\n\n\n\n-- Update logs\nDECLARE @ChangeDetails VARCHAR(300) = '';\nDECLARE @Now DATETIME=GETDATE();\n\nINSERT INTO dbo.UsrHistory(AdditionalInfo, CommID, CommTableID, DateActioned, EntityDescription, HasSinceBeenDeleted, Parameter, UsrName, UsrHistoryActionID, StackTrace)\nVALUES(@ChangeDetails, NULL, 'AffectedTable', @Now, N'AffectedColumn', 0, @ChangedId, 'SA', N'Addition|Amendment|Deletion', NULL);\n\nINSERT INTO dbo.ScriptLog(Description, DateApplied, Version, Completed)\nVALUES(@ChangeDetails, @Now, '0.0.0', 1);\n\nCOMMIT;\n\n------------------------------------------------------\n--------------------- Script end ---------------------\n------------------------------------------------------",
+  "placeholders": [
+    {
+      "name": "author",
+      "defaultValue": ""
+    },
+    {
+      "name": "issue_num",
+      "defaultValue": ""
+    },
+    {
+      "name": "issue_desc",
+      "defaultValue": ""
+    },
+    {
+      "name": "description",
+      "defaultValue": ""
+    }
+  ]
+}

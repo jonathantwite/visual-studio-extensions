@@ -1,0 +1,6 @@
+{
+  "id": "ecbbf0c8-b55f-4b68-9168-99fd71d987f8",
+  "prefix": "e8ver",
+  "description": "Return the Elector 8 Version summary",
+  "body": "DECLARE @SQL NVARCHAR(MAX);\nIF EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES AS T WHERE T.TABLE_SCHEMA = 'dbo' AND T.TABLE_NAME = 'VersionHistory')\n\tSET @SQL = N'\n\t\tSELECT TOP (1) CONCAT(VH.Major, ''.'', VH.Minor, ''.'', VH.Build, ''.'', VH.Revision) AS Version, NULL AS Branch, VH.UpdateDate\n\t\tFROM dbo.VersionHistory AS VH\n\t\tORDER BY VH.VersionHistoryID DESC';\nELSE\n\tSET @SQL = N'\n\t\tSELECT TOP(1) \n\t\t\tSL.Version, \n\t\t\tCASE \n\t\t\t\tWHEN CHARINDEX(''Script run on'', SL.Description) > 2 THEN SUBSTRING(SL.Description, 1, CHARINDEX(''Script run on'', SL.Description) - 2) \n\t\t\t\tELSE ''''\n\t\t\tEND AS Branch,\n\t\t\tSL.DateApplied AS [Last Updated]\n\t\tFROM dbo.ScriptLog AS SL\n\t\tWHERE SL.Version <> ''0.0.0''\n\t\tORDER BY\n\t\t    CONVERT(INT, SUBSTRING(SL.Version, 0, CHARINDEX(''.'', SL.Version))) DESC,\n\t\t\tCONVERT(INT, SUBSTRING(SL.Version, CHARINDEX(''.'', SL.Version) + 1, CHARINDEX(''.'', SL.Version, CHARINDEX(''.'', SL.Version) + 1) - CHARINDEX(''.'', SL.Version) - 1)) DESC,\n\t\t\tCONVERT(DECIMAL(6,3), SUBSTRING(SL.Version, CHARINDEX(''.'', SL.Version, CHARINDEX(''.'', SL.Version) + 1) + 1, 1000)) DESC,\n\t\t    SL.DateApplied DESC';\nEXEC sys.sp_executesql @stmt = @SQL;"
+}

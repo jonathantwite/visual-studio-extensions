@@ -1,0 +1,16 @@
+{
+  "id": "3781702f-f1e6-4173-9111-49cbfda86352",
+  "prefix": "dccii",
+  "description": "Create nonclustered index with INCLUDE columns",
+  "body": "IF EXISTS (SELECT * FROM sys.indexes WHERE name='IX_$table$_$columns$_INCLUDES' AND object_id=OBJECT_ID('dbo.$table$'))\n    DROP INDEX IX_$table$_$columns$_INCLUDES ON dbo.$table$\nGO\n\nCREATE NONCLUSTERED INDEX IX_$table$_$columns$_INCLUDES\nON dbo.$table$($CURSOR$)\nINCLUDE();\nGO",
+  "placeholders": [
+    {
+      "name": "table",
+      "defaultValue": ""
+    },
+    {
+      "name": "columns",
+      "defaultValue": ""
+    }
+  ]
+}

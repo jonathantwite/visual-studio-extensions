@@ -1,0 +1,12 @@
+{
+  "id": "fcb3f233-b8e8-49b5-9a5c-e0d7b5a5b6a3",
+  "prefix": "cd",
+  "description": "Count Distinct",
+  "body": "COUNT(DISTINCT $column$)",
+  "placeholders": [
+    {
+      "name": "column",
+      "defaultValue": ""
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "97c2863c-c6a5-41ed-8004-c99e4dcadbbc",
+  "prefix": "dccv",
+  "description": "Create view",
+  "body": "IF EXISTS (SELECT * FROM sys.views WHERE object_id=OBJECT_ID(N'dbo.$name$'))\n    DROP VIEW dbo.$name$;\nGO\n\nCREATE VIEW $name$ \nAS \n$SELECTEDTEXT$$CURSOR$\nGO",
+  "placeholders": [
+    {
+      "name": "name",
+      "defaultValue": ""
+    }
+  ]
+}

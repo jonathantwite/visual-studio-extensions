@@ -1,0 +1,6 @@
+{
+  "id": "f01a2c81-d980-4b9d-b75e-9c540094bff8",
+  "prefix": "t1",
+  "description": "Timing, IO statistics off, include total time",
+  "body": "SET STATISTICS TIME,IO OFF;\nPRINT CONCAT('Total time:', DATEDIFF(MILLISECOND, @T0, GETDATE()), ' ms');"
+}

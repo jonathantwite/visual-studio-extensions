@@ -1,0 +1,16 @@
+{
+  "id": "2667721a-6c33-451f-9417-5f47a9c37e03",
+  "prefix": "dccp",
+  "description": "Create stored procedure",
+  "body": "IF EXISTS (SELECT * FROM sys.objects WHERE object_id=OBJECT_ID(N'dbo.$procedure_name$') AND type in (N'P', N'PC'))\n    DROP PROCEDURE dbo.$procedure_name$;\nGO\n\n-- =============================================\n-- Author:\t\tTwite, Jonathan\n-- Create date: $DATE(yyyy-MM-dd)$\n-- Description:\t$description$\n-- Example:\t\tEXEC $procedure_name$\n-- Remarks:\t\t\n-- =============================================\nCREATE PROCEDURE $procedure_name$\n\t-- Add the parameters for the stored procedure here\n\t$CURSOR$\nAS\nBEGIN\n\t-- SET NOCOUNT ON added to prevent extra result sets from\n\t-- interfering with SELECT statements.\n\tSET NOCOUNT ON;\n\n    -- Insert statements for procedure here\n\t\nEND\nGO\n",
+  "placeholders": [
+    {
+      "name": "procedure_name",
+      "defaultValue": "[schema].[procedure_name]"
+    },
+    {
+      "name": "description",
+      "defaultValue": ""
+    }
+  ]
+}

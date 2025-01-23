@@ -1,0 +1,6 @@
+{
+  "id": "5c5da350-e1cf-4102-9809-67738001ec22",
+  "prefix": "cnt",
+  "description": "Count the records in a table",
+  "body": "SELECT COUNT(*)\nFROM $CURSOR$"
+}
